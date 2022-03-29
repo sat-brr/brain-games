@@ -1,4 +1,4 @@
-install: # установка пакетов poetry
+install: # установка зависимостей
 	poetry install
 
 brain-games: # запустить приложение
@@ -11,4 +11,7 @@ publish: # публикация пакета
 	poetry publish --dry-run
 
 package-install: # установка пакета из дистрибутива
-	python3 -m pip install --user dist/*.whl	
+	python3 -m pip install --user dist/*.whl
+
+lint: # проверка линтером
+	poetry run flake8 brain_games
