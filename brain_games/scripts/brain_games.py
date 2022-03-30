@@ -1,6 +1,5 @@
-import sys
-sys.path.insert(1, '/home/sat/python-project-lvl1/brain_games')
-import cli
+#!/usr/bin/env python3
+from brain_games import cli
 
 
 def main():

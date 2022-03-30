@@ -15,3 +15,4 @@ package-install: # установка пакета из дистрибутива
 
 lint: # проверка линтером
 	poetry run flake8 brain_games
+
