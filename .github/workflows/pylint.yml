@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : install_poetry
-        run:
+        run: |
           pip install poetry
           make install
       - name : build_pack
-        run:
+        run: |
           make build
       - name : test flake8
-        run:
+        run: |
           make lint
