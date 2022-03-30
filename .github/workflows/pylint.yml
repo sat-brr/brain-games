@@ -9,10 +9,9 @@ jobs:
       - name : install_poetry
         run: |
           pip install poetry
+      - name : make install  
+        run: |  
           make install
-      - name : build_pack
-        run: |
-          make build
       - name : test flake8
         run: |
           make lint
