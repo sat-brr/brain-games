@@ -32,8 +32,8 @@ def logic():
             print('Correct')
         else:
             print(f"'{answer_player}' is wrong answer ;(."
-                f"'Correct answer was '{answer}'\n"
-                f"Let's try again, {name}!")
+                  f"'Correct answer was '{answer}'\n"
+                  f"Let's try again, {name}!")
             break
     if count == 3:
         print(f'Congratulations, {name}!')
