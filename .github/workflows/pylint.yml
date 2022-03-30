@@ -8,8 +8,11 @@ jobs:
     steps:
       - name : install_poetry
         run:
-          python3 -m pip install poetry
+          pip install poetry
           make install
+      - name : build_pack
+        run:
+          make build
       - name : test flake8
         run:
           make lint
