@@ -9,6 +9,7 @@ jobs:
       - name : install_poetry
         run:
           python3 -m pip install poetry
+          make install
       - name : test flake8
         run:
           make lint
