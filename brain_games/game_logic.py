@@ -2,6 +2,9 @@ from random import randint
 import prompt
 
 
+welcome = "Welcome to the Brain Games!"
+
+
 def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -19,20 +22,21 @@ def current_answer():
 
 
 def logic():
+    print(welcome)
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
     while count < 3:
         quest, answer = current_answer()
-        print(f'Question :{quest}')
-        answer_player = prompt.string()
+        print(f'Question: {quest}')
+        answer_player = prompt.string('')
         print(f'Your answer: {answer_player}')
         if answer_player == answer:
             count += 1
-            print('Correct')
+            print('Correct!')
         else:
             print(f"'{answer_player}' is wrong answer ;(."
-                  f"'Correct answer was '{answer}'\n"
+                  f"'Correct answer was '{answer}.'\n"
                   f"Let's try again, {name}!")
             break
     if count == 3:
