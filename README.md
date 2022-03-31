@@ -6,3 +6,5 @@
 [![Python CI](https://github.com/sat-brr/python-project-lvl1/actions/workflows/pylint.yml/badge.svg)](https://github.com/sat-brr/python-project-lvl1/actions/workflows/pylint.yml)
 
 [![asciicast](https://asciinema.org/a/oTKlXPVkBzvJUDziNKYqfHffL.svg)](https://asciinema.org/a/oTKlXPVkBzvJUDziNKYqfHffL)
+
+[![asciicast](https://asciinema.org/a/DiBEe3VIRbXxABz5nzRSbrDpp.svg)](https://asciinema.org/a/DiBEe3VIRbXxABz5nzRSbrDpp)

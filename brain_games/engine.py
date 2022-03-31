@@ -1,5 +1,3 @@
-#from operator import mul, add, sub
-#from random import randint, choice
 import prompt
 
 
@@ -10,34 +8,9 @@ def welcome_user():
     return name
 
 
-#def current_answer(game):
-    if game == 'even':
-        rand_num = randint(1, 100)
-        correct_answ = ''
-        if rand_num % 2 == 0:
-            correct_answ += 'yes'
-        else:
-            correct_answ += 'no'
-        return str(rand_num), str(correct_answ)
-    elif game == 'calc':
-        rand_num1 = randint(1, 100)
-        rand_num2 = randint(1, 100)
-        operators = (('*', mul),('+', add),('-', sub))
-        random_oper = choice(operators)
-        task = '{0} {1} {2}'.format(rand_num1, random_oper[0], rand_num2)
-        correct_answ = random_oper[1](rand_num1,rand_num2)
-        return str(task), str(correct_answ)
-        
-
-def game_rules(game):
-    if game == 'game_even':
-        print('Answer "yes" if the number is even, otherwise answer "no".')
-    elif game == 'game_calc':
-        print('What is the result of the expression?')
-
 def logic(game_name):
     name = welcome_user()
-    game_rules(str(game_name))
+    game_name.game_rules()
     count = 0
     while count < 3:
         quest, answer = game_name.correct_answer()
