@@ -2,10 +2,8 @@ from random import randint
 import prompt
 
 
-welcome = "Welcome to the Brain Games!"
-
-
 def welcome_user():
+    welcome = "Welcome to the Brain Games!"
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
@@ -22,7 +20,6 @@ def current_answer():
 
 
 def logic():
-    print(welcome)
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
