@@ -16,3 +16,5 @@ package-install: # установка пакета из дистрибутива
 lint: # проверка линтером
 	poetry run flake8 brain_games
 
+package-uninstall: # удаление пакета
+	python3 -m pip uninstall dist/*.whl
