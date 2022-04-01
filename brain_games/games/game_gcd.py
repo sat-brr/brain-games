@@ -6,7 +6,7 @@ def game_rules():
     print('Find the greatest common divisor of given numbers.')
 
 
-def correct_answer():
+def quest_and_correct_answer():
     rand_num1 = randint(1, 10)
     rand_num2 = randint(1, 10)
     correct_answ = gcd(rand_num1, rand_num2)

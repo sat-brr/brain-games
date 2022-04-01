@@ -13,7 +13,7 @@ def logic(game_name):
     game_name.game_rules()
     count = 0
     while count < 3:
-        quest, answer = game_name.correct_answer()
+        quest, answer = game_name.quest_and_correct_answer()
         print(f'Question: {quest}')
         answer_player = prompt.string('')
         print(f'Your answer: {answer_player}')

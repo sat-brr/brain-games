@@ -5,7 +5,7 @@ def game_rules():
     print('What number is missing in the progression?')
 
 
-def correct_answer():
+def quest_and_correct_answer():
     start = randint(1, 50)
     random_step = randint(1, 10)
     i = 0

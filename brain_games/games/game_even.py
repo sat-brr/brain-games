@@ -5,7 +5,7 @@ def game_rules():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
-def correct_answer():
+def quest_and_correct_answer():
     rand_num = randint(1, 100)
     correct_answ = ''
     if rand_num % 2 == 0:

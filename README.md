@@ -5,6 +5,17 @@
 
 [![Python CI](https://github.com/sat-brr/python-project-lvl1/actions/workflows/pylint.yml/badge.svg)](https://github.com/sat-brr/python-project-lvl1/actions/workflows/pylint.yml)
 
+
+Описание пакета
+Пакет brain_games содержит пять консольных игр. Каждая игра задаёт вопрос, на который нужно отвечать в соотвествии с правилами игры.
+Игра считается пройденной после 3х правильных ответов подряд.
+1) brain-even: Является ли число четным.
+2) brain-calc: Решить уравнение
+3) brain-gcd: Поиск наибольшего общего делителя
+4) brain-progression: Поиск пропущенного числа в арифметической прогрессии.
+5) brain-prime: Является ли число простым.
+
+
 [![asciicast](https://asciinema.org/a/oTKlXPVkBzvJUDziNKYqfHffL.svg)](https://asciinema.org/a/oTKlXPVkBzvJUDziNKYqfHffL)
 
 [![asciicast](https://asciinema.org/a/DiBEe3VIRbXxABz5nzRSbrDpp.svg)](https://asciinema.org/a/DiBEe3VIRbXxABz5nzRSbrDpp)

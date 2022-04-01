@@ -6,7 +6,7 @@ def game_rules():
     print('What is the result of the expression?')
 
 
-def correct_answer():
+def quest_and_correct_answer():
     rand_num1 = randint(1, 10)
     rand_num2 = randint(1, 10)
     operators = (('*', mul), ('+', add), ('-', sub))
