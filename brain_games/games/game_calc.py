@@ -14,5 +14,3 @@ def quest_and_correct_answer():
     quest = f'{rand_num1} {random_oper[0]} {rand_num2}'
     correct_answ = random_oper[1](rand_num1, rand_num2)
     return str(quest), str(correct_answ)
-
-print(quest_and_correct_answer())
