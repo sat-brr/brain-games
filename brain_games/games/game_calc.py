@@ -11,6 +11,8 @@ def quest_and_correct_answer():
     rand_num2 = randint(1, 10)
     operators = (('*', mul), ('+', add), ('-', sub))
     random_oper = choice(operators)
-    quest = '{0} {1} {2}'.format(rand_num1, random_oper[0], rand_num2)
+    quest = f'{rand_num1} {random_oper[0]} {rand_num2}'
     correct_answ = random_oper[1](rand_num1, rand_num2)
     return str(quest), str(correct_answ)
+
+print(quest_and_correct_answer())
