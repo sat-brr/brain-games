@@ -15,6 +15,10 @@
 4) brain-progression: Поиск пропущенного числа в арифметической прогрессии.
 5) brain-prime: Является ли число простым.
 
+Требования для работы пакета:
+1)python3
+2)prompt
+
 
 [![asciicast](https://asciinema.org/a/oTKlXPVkBzvJUDziNKYqfHffL.svg)](https://asciinema.org/a/oTKlXPVkBzvJUDziNKYqfHffL)
 
