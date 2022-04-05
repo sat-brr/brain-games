@@ -8,12 +8,13 @@ def welcome_user():
     return name
 
 
-def logic(game_name):
-    name = welcome_user()
-    game_name.game_rules()
-    count = 0
-    while count < 3:
-        quest, answer = game_name.quest_and_correct_answer()
+def game_logic(game):
+    user_name = welcome_user()
+    print(game.game_rules())
+    count = 0  # Счетчик правильных ответов
+    TOTAL = 3  # Требуемое количество правильных ответов для победы в игре
+    while count < TOTAL:
+        quest, answer = game.question_and_correct_answer()
         print(f'Question: {quest}')
         answer_player = prompt.string('')
         print(f'Your answer: {answer_player}')
@@ -23,7 +24,7 @@ def logic(game_name):
         else:
             print(f"'{answer_player}' is wrong answer ;(."
                   f"'Correct answer was '{answer}.'\n"
-                  f"Let's try again, {name}!")
+                  f"Let's try again, {user_name}!")
             break
-    if count == 3:
-        print(f'Congratulations, {name}!')
+    if count == TOTAL:
+        print(f'Congratulations, {user_name}!')

@@ -2,10 +2,10 @@ from random import randint
 
 
 def game_rules():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def quest_and_correct_answer():
+def question_and_correct_answer():
     rand_num = randint(2, 20)
     counter = 0
     correct_answer = ''
