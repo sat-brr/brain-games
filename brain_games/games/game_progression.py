@@ -1,6 +1,9 @@
 from random import randint, randrange
 
 
+VALUES_IN_PROGRESSION = 10
+
+
 def game_rules():
     return 'What number is missing in the progression?'
 
@@ -8,15 +11,11 @@ def game_rules():
 def question_and_correct_answer():
     start = randint(1, 50)
     random_step = randint(1, 10)
-    i = 0
     progression = [start]
-    for i in range(9):
-        a = start + random_step
-        progression.append(a)
-        start = a
-    # random_choice = choice(progression)
-    # hidden_choice = progression.index(random_choice)
-    # progression[hidden_choice] = '..'
+    for i in range(1, VALUES_IN_PROGRESSION):
+        num = start + random_step
+        progression.append(num)
+        start = num
     random_index = randrange(len(progression))
     correct_answer = progression[random_index]
     progression[random_index] = '..'

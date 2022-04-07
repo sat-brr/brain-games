@@ -5,15 +5,20 @@ def game_rules():
     return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
+def is_prime(num):
+    deviders = 0
+    for i in range(2, (num // 2) + 1):
+        if num % i == 0:
+            deviders += 1
+            break
+    return deviders
+
+
 def question_and_correct_answer():
     rand_num = randint(2, 20)
-    counter = 0
+    deviders = is_prime(rand_num)
     correct_answer = ''
-    for i in range(2, (rand_num // 2) + 1):
-        if rand_num % i == 0:
-            counter += 1
-            break
-    if counter == 0:
+    if deviders == 0:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
