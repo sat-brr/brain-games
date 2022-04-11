@@ -1,7 +1,7 @@
 from random import randint, randrange
 
 
-VALUES_IN_PROGRESSION = 10
+PROGRESSION_SIZE = 10
 
 
 def game_rules():
@@ -12,7 +12,7 @@ def question_and_correct_answer():
     start = randint(1, 50)
     random_step = randint(1, 10)
     progression = [start]
-    for i in range(1, VALUES_IN_PROGRESSION):
+    for i in range(1, PROGRESSION_SIZE):
         num = start + random_step
         progression.append(num)
         start = num
