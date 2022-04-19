@@ -11,9 +11,9 @@ def welcome_user():
     return name
 
 
-def game_launch(game):
+def launch(game):
     user_name = welcome_user()
-    print(game.game_rules())
+    print(game.GAME_RULE)
     correct_answer_counter = 0
     while correct_answer_counter < NUMBER_OF_ROUNDS:
         question, correct_answer = game.question_and_correct_answer()
@@ -28,5 +28,5 @@ def game_launch(game):
                   f"'Correct answer was '{correct_answer}.'\n"
                   f"Let's try again, {user_name}!")
             break
-    if correct_answer_counter == NUMBER_OF_ROUNDS:
+    else:
         print(f'Congratulations, {user_name}!')

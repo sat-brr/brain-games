@@ -2,8 +2,7 @@ from operator import mul, add, sub
 from random import randint, choice
 
 
-def game_rules():
-    return 'What is the result of the expression?'
+GAME_RULE = 'What is the result of the expression?'
 
 
 def question_and_correct_answer():

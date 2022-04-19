@@ -1,8 +1,7 @@
 from random import randint
 
 
-def game_rules():
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):

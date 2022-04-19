@@ -2,17 +2,14 @@ from random import randint, randrange
 
 
 PROGRESSION_SIZE = 10
-
-
-def game_rules():
-    return 'What number is missing in the progression?'
+GAME_RULE = 'What number is missing in the progression?'
 
 
 def question_and_correct_answer():
     start = randint(1, 50)
     random_step = randint(1, 10)
     progression = [start]
-    for i in range(1, PROGRESSION_SIZE):
+    for _ in range(1, PROGRESSION_SIZE):
         num = start + random_step
         progression.append(num)
         start = num
