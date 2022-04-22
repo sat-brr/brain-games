@@ -4,15 +4,10 @@ import prompt
 NUMBER_OF_ROUNDS = 3
 
 
-def welcome_user():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
-
-
 def launch(game):
-    user_name = welcome_user()
+    print("Welcome to the Brain Games!")
+    user_name = prompt.string('May I have your name? ')
+    print(f'Hello, {user_name}!')
     print(game.GAME_RULE)
     correct_answer_counter = 0
     while correct_answer_counter < NUMBER_OF_ROUNDS:
